@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, #ba7453, #d1a984);
+    z-index: -2;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    align-items: center;
+    color: azure;
+}
+
+#logo {
+    grid-column: 2/3;
+    font-size: 24px;
+}
+
+.menu {
+    justify-self: end;
+}
+
+section {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    background-color: azure;
+}
+
+.headline {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font: size 100px;
+    transform: translate(-20%, -70%);
+    color: white;
+}
